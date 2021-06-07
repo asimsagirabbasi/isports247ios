@@ -1,0 +1,37 @@
+require_relative '../node_modules/react-native/scripts/react_native_pods'
+require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
+
+platform :ios, '10.0'
+source 'https://github.com/CocoaPods/Specs.git'
+target 'isports247' do
+  config = use_native_modules!
+
+  use_react_native!(:path => config["reactNativePath"])
+
+  pod 'react-native-pager-view', :path => '../node_modules/react-native-pager-view'
+
+  pod 'RNCAsyncStorage', :path => '../node_modules/@react-native-async-storage/async-storage'
+
+  target 'isports247Tests' do
+    inherit! :complete
+    # Pods for testing
+  end
+
+  # Enables Flipper.
+  #
+  # Note that if you have use_frameworks! enabled, Flipper will not work and
+  # you should disable these next few lines.
+  use_flipper!
+  post_install do |installer|
+    flipper_post_install(installer)
+  end
+end
+
+target 'isports247-tvOS' do
+  # Pods for isports247-tvOS
+
+  target 'isports247-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+end

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "813278257488",
+    "project_id": "isports247",
+    "storage_bucket": "isports247.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:813278257488:android:04f81dc971ae33003bcc55",
+        "android_client_info": {
+          "package_name": "com.isports247"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "813278257488-l6vta003epg45qlscc6hno92516dvkcp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwEbLFhyDGk0tTL7g8lU0_E0wCuzP9fw0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "813278257488-l6vta003epg45qlscc6hno92516dvkcp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
